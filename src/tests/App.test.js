@@ -1,9 +1,6 @@
 import React from 'react';
-// import { render, screen } from '@testing-library/react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-// import { createMemoryHistory } from 'history';
-// import { Router } from 'react-router';
 import App from '../App';
 import renderWithRouter from '../services/renderWithRouter';
 
