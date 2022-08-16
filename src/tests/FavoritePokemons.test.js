@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import FavoritePokemons from '../pages/FavoritePokemons';
 
 describe('Teste o componente <FavoritePokemons.js />', () => {
-  test('Se existe um h2 com o texto About Pokédex', () => {
+  test('Se existe um h2 com o texto Favorite pokémons', () => {
     render(<FavoritePokemons />);
     const pageTitle = screen
       .getByRole('heading', { level: 2, name: /Favorite pokémons/i });
