@@ -19,5 +19,6 @@ describe('Teste o componente <About.js />', () => {
     const imgPokedex = screen.getByRole('img');
     expect(imgPokedex).toBeInTheDocument();
     expect(imgPokedex.getAttribute('src')).toBe(imgSrc);
+    expect(imgPokedex).toHaveAttribute('src', imgSrc);
   });
 });
