@@ -1,8 +1,17 @@
 import React from 'react';
-import { screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 import App from '../App';
-import renderWithRouter from '../services/renderWithRouter';
+
+const renderWithRouter = (component) => {
+  const history = createMemoryHistory();
+  return ({
+    ...render(<Router history={ history }>{component}</Router>),
+    history,
+  });
+};
 
 describe('Teste o componente <App.js />', () => {
   test('Se existem os links Home, About e Favorite Pokémons', () => {
