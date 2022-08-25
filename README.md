@@ -1,8 +1,5 @@
 ## Project React Testing Library
 
-Links: <a href="https://guyddogl.github.io/trybe-project-frontend-online-store/">Preview</a>
-<hr/>
-
 O principal objetivo deste projeto foi praticar o uso de React Testing Library
 
 ### Tecnologias principais
